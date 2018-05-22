@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Clock Display</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="controls">
+        <input type="range" name="dial-border" min="1" max="10" value="5" data-sizing="px" id="dial-border-width"/><br/>
+        <input type="range" name="dial-border" min="1" max="10" value="1" data-sizing="px" /><br/>
+        <input type="color" name="color" />
+    </div>
+    <div class="container">
+    <div id="dial" class="dial">
+        <div id="seconds" class="hand handSeconds"></div>
+        <div id="minutes" class="hand handMinutes"></div>
+        <div id="hours" class="hand handHours"></div>
+        <div id="time" class="time-display"></div>
+
+    </div>
+    <div id="dial2" class="dial blur dial-reflected">
+        <div id="seconds2" class="hand handSeconds blur"></div>
+        <div id="minutes2" class="hand handMinutes blur"></div>
+        <div id="hours2" class="hand handHours blur"></div>
+        <div id="time2" class="time-display blur time-reflected"></div>
+
+    </div>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
